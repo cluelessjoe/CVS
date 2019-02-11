@@ -36,7 +36,7 @@
                             <div class="col-sm-4 col-md-3 col-xl-3 text-center m-auto"><img src="{{ url_for('static', filename='power-plant.png')}}"></div>
                             <div class="col-sm-8 col-md-9">
                                 <p class="production mb-0" data-toggle="tooltip" data-placement="bottom" title="{% for site in Sites %}<b>{{site['Name']}}</b><br>{{site['CO2']}} kg<br> {% endfor %}" data-html="true">{{Sites_CO2}} kg de CO²</p>
-                                <p>Et oui, on a déjà économisé tout cela sur le territoire ! <small>(statistiques solaredge)</small></p>
+                                <p>Et oui, on a déjà économisé tout cela sur le territoire ! <small>(statistiques SolarEdge)</small></p>
                             </div>
                         </div>
                         <hr class="mt-0 mb-0" />
@@ -44,7 +44,7 @@
                             <div class="col-sm-4 col-md-3 col-xl-3 text-center m-auto"><img src="{{ url_for('static', filename='forest.png')}}"></div>
                             <div class="col-sm-8 col-md-9">
                                 <p class="production mb-0" data-toggle="tooltip" data-placement="bottom" title="{% for site in Sites %}<b>{{site['Name']}}</b><br>{{site['trees']}} arbres<br> {% endfor %}" data-html="true">{{Sites_Trees}} arbres à planter</p>
-                                <p>La production de CO² économisée représente autant d'arbres plantés, qui absorberaient cette quantité. Bon, ça ne nous empêche pas d'en planter aussi ! <small>(statistiques solaredge)</small></p>
+                                <p>La production de CO² économisée représente autant d'arbres plantés, qui absorberaient cette quantité. Bon, ça ne nous empêche pas d'en planter aussi ! <small>(statistiques SolarEdge)</small></p>
                             </div>
                         </div>
                         <hr class="mt-0 mb-0" />
@@ -52,7 +52,7 @@
                             <div class="col-sm-4 col-md-3 col-xl-3 text-center m-auto"><img src="{{ url_for('static', filename='light-bulb.png')}}"></div>
                             <div class="col-sm-8 col-md-9">
                                 <p class="production mb-0" data-toggle="tooltip" data-placement="bottom" title="{% for site in Sites %}<b>{{site['Name']}}</b><br>{{site['lightbulbs']}} ampoules<br> {% endfor %}" data-html="true">{{Sites_Bulbs}} ampoules allumées 24h.</p>
-                                <p>La production solaire de nos panneaux (depuis leur mise en place), si elle avait été consacrée uniquement à cela, aurait permis d'éclairer {{Sites_Bulbs}} ampoules pendant 24H. <small>(statistiques solaredge)</small></p>
+                                <p>La production solaire de nos panneaux (depuis leur mise en place), si elle avait été consacrée uniquement à cela, aurait permis d'éclairer {{Sites_Bulbs}} ampoules pendant 24H. <small>(statistiques SolarEdge)</small></p>
                             </div>
                         </div>
                         <hr class="mt-0 mb-0" />
