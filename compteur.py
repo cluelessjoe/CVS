@@ -91,7 +91,7 @@ def RefreshData():
                 error = True
 
         if not error is True:
-            Update = format_datetime(datetime.now(), "dd MMMM YYYY kk:mm", locale='fr')
+            Update = format_datetime(datetime.now(), "d MMMM YYYY H'h'mm", locale='fr')
 
         sleep(900)
 
