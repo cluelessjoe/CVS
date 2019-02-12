@@ -55,7 +55,7 @@ Sites = [{"ID" : ,
             }
             ]
 
-Update = format_datetime(datetime.now(), "dd MMMM YYYY kk:mm", locale='fr')
+Update = format_datetime(datetime.now(), "d MMMM YYYY 'à' H'h'mm", locale='fr')
 
 #----------------------------------------------------------------------
 #  GETTING DATAS EVERY 15MINS
@@ -91,7 +91,7 @@ def RefreshData():
                 error = True
 
         if not error is True:
-            Update = format_datetime(datetime.now(), "d MMMM YYYY H'h'mm", locale='fr')
+            Update = format_datetime(datetime.now(), "d MMMM YYYY 'à' H'h'mm", locale='fr')
 
         sleep(900)
 
